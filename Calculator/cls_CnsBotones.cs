@@ -22,6 +22,7 @@ namespace Calculator
             objButton.TabStop = false;
             objButton.Size = new Size(65, 50); //Ancho Alto
             objButton.Font = new Font(objButton.Font.FontFamily, 12);
+
         }
 
     }
