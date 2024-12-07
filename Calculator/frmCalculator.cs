@@ -55,7 +55,7 @@ namespace Calculator
             cls_CnsBotones.ConstructorDeBotones(objButton3);
             this.Controls.Add(objButton3);
 
-            //btn 7
+            //Button 7
             Button objButton4 = new Button();
             objButton4.Location = new Point(20,278);
             objButton4.Text = "7";
