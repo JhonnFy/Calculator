@@ -69,7 +69,7 @@ namespace Calculator
             cls_CnsBotones.ConstructorDeBotones(objButton5);
             this.Controls.Add(objButton5);
 
-            //btn ,
+            //Button ,
             Button objButton6 = new Button();
             objButton6.Location = new Point(160, 440);
             objButton6.Text = ",";
