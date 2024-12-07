@@ -85,6 +85,14 @@ namespace Calculator
             objButton7.BackColor = Color.SteelBlue;
             objButton7.ForeColor = Color.White;
             this.Controls.Add(objButton7);
+
+            //Button 2
+            Button objButton8 = new Button();
+            objButton8.Location = new Point(78,386);
+            objButton8.Text = "2";
+            cls_CnsBotones.ConstructorDeBotones(objButton8);
+            this.Controls.Add(objButton8);
+
         }
 
         private void InitializeComponent()
