@@ -36,49 +36,49 @@ namespace Calculator
         {
             //Button ±
             Button objButton1 = new Button();
-            objButton1.Location = new Point(20, 440); //Filas Columnas
+            objButton1.Location = new Point(8, 440); //Filas Columnas
             objButton1.Text = "±";
             cls_CnsBotones.ConstructorDeBotones(objButton1);
             this.Controls.Add(objButton1);
 
             //Button 1
             Button objButton2 = new Button();
-            objButton2.Location = new Point(20, 386);
+            objButton2.Location = new Point(8, 386);
             objButton2.Text = "1";
             cls_CnsBotones.ConstructorDeBotones(objButton2);
             this.Controls.Add(objButton2);
 
             //Button 4
             Button objButton3 = new Button();
-            objButton3.Location = new Point(20, 332);
+            objButton3.Location = new Point(8, 332);
             objButton3.Text = "4";
             cls_CnsBotones.ConstructorDeBotones(objButton3);
             this.Controls.Add(objButton3);
 
             //Button 7
             Button objButton4 = new Button();
-            objButton4.Location = new Point(20,278);
+            objButton4.Location = new Point(8,278);
             objButton4.Text = "7";
             cls_CnsBotones.ConstructorDeBotones(objButton4);
             this.Controls.Add(objButton4);
 
             //Button 0
             Button objButton5 = new Button();
-            objButton5.Location = new Point(90,440);
+            objButton5.Location = new Point(78,440);
             objButton5.Text = "0";
             cls_CnsBotones.ConstructorDeBotones(objButton5);
             this.Controls.Add(objButton5);
 
             //Button ,
             Button objButton6 = new Button();
-            objButton6.Location = new Point(160, 440);
+            objButton6.Location = new Point(148, 440);
             objButton6.Text = ",";
             cls_CnsBotones.ConstructorDeBotones(objButton6);
             this.Controls.Add(objButton6);
 
             //Button =
             Button objButton7 = new Button();
-            objButton7.Location = new Point(230, 440);
+            objButton7.Location = new Point(218, 440);
             objButton7.Text = "=";
             cls_CnsBotones.ConstructorDeBotones(objButton7);
             //En Esta Propiedad Se Sobreescribe El Metodo Del Color
@@ -93,7 +93,7 @@ namespace Calculator
             // 
             // frmCalculator
             // 
-            this.ClientSize = new System.Drawing.Size(359, 494);
+            this.ClientSize = new System.Drawing.Size(290, 494);
             this.Name = "frmCalculator";
             this.Load += new System.EventHandler(this.frmCalculator_Load_1);
             this.ResumeLayout(false);
