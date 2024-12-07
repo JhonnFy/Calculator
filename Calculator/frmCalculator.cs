@@ -34,7 +34,7 @@ namespace Calculator
         //Metodo Para CrearBotones
         private void NuevosBotones()
         {
-            //btn ±
+            //Button ±
             Button objButton1 = new Button();
             objButton1.Location = new Point(20, 440); //Filas Columnas
             objButton1.Text = "±";
@@ -62,7 +62,7 @@ namespace Calculator
             cls_CnsBotones.ConstructorDeBotones(objButton4);
             this.Controls.Add(objButton4);
 
-            //btn 0
+            //Button 0
             Button objButton5 = new Button();
             objButton5.Location = new Point(90,440);
             objButton5.Text = "0";
