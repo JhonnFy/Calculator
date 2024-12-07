@@ -100,6 +100,21 @@ namespace Calculator
             cls_CnsBotones.ConstructorDeBotones(objButton9);
             this.Controls.Add(objButton9);
 
+            //Button +
+            Button objButton10 = new Button();
+            objButton10.Location = new Point(218,386);
+            objButton10.Text = "+";
+            cls_CnsBotones.ConstructorDeBotones(objButton10);
+            objButton10.BackColor = Color.SteelBlue;
+            objButton10.ForeColor = Color.White;
+            this.Controls.Add(objButton10);
+
+            //Button 5
+            Button objButton11 = new Button();
+            objButton11.Location = new Point(78,332);
+            objButton11.Text = "5";
+            cls_CnsBotones.ConstructorDeBotones(objButton11);
+            this.Controls.Add(objButton11);
 
         }
 
