@@ -105,6 +105,7 @@ namespace Calculator
             objButton10.Location = new Point(218,386);
             objButton10.Text = "+";
             cls_CnsBotones.ConstructorDeBotones(objButton10);
+            //En Esta Propiedad Se Sobreescribe El Metodo Del Color
             objButton10.BackColor = Color.SteelBlue;
             objButton10.ForeColor = Color.White;
             this.Controls.Add(objButton10);
@@ -122,6 +123,17 @@ namespace Calculator
             objButton12.Text = "6";
             cls_CnsBotones.ConstructorDeBotones(objButton12);
             this.Controls.Add(objButton12);
+
+            //Button -
+            Button objButton13 = new Button();
+            objButton13.Location = new Point(218, 332);
+            objButton13.Text = "-";
+            cls_CnsBotones.ConstructorDeBotones(objButton13);
+            //En Esta Propiedad Se Sobreescribe El Metodo Del Color
+            objButton13.BackColor = Color.SteelBlue;
+            objButton13.ForeColor = Color.White;
+            this.Controls.Add(objButton13);
+
 
         }
 
