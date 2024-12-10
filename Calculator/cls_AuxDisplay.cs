@@ -15,7 +15,6 @@ namespace Calculator
             //Caracteristicas
             objLabel.TextAlign = ContentAlignment.BottomRight; //Texto Esquina Inferior Derecha
             objLabel.Font = new Font("Arial", 16);
-            objLabel.Padding = new Padding(0,0,10,5);
         }
 
     }
