@@ -190,11 +190,11 @@ namespace Calculator
             this.Controls.Add(objButton20);
 
             //Button 2√x
-            //Button objButton21 = new Button();
-            //objButton21.Location = new Point(148,224);
-            //objButton21.Text = "2√x";
-            //cls_CnsBotones.ConstructorDeBotones(objButton21);
-            //this.Controls.Add(objButton21);
+            Button objButton21 = new Button();
+            objButton21.Location = new Point(148, 224);
+            objButton21.Text = "2√x";
+            cls_CnsBotones.ConstructorDeBotones(objButton21);
+            this.Controls.Add(objButton21);
 
         }
 
