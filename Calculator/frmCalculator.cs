@@ -13,6 +13,8 @@ namespace Calculator
     public partial class frmCalculator : Form
     {
 
+        private Label objLabelDisplay; //Campo De Clase
+
         //Metodo Constructor
         public frmCalculator()
         {
@@ -21,9 +23,8 @@ namespace Calculator
             this.StartPosition = FormStartPosition.CenterScreen;
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
 
-            NuevosBotones();
             NuevoDisplay();
-
+            NuevosBotones();
         }
 
         private void frmCalculator_Load(object sender, EventArgs e)
@@ -34,14 +35,13 @@ namespace Calculator
         //Metodo Para CrearDisplay
         private void NuevoDisplay()
         {
-            Label objLabelDisplay = new Label();
+            objLabelDisplay = new Label(); //Inicializar El Campo
             objLabelDisplay.BackColor = Color.Red;
             objLabelDisplay.ForeColor = Color.Blue;
             cls_AuxDisplay.ConstructorDeDisplay(objLabelDisplay);
             this.Controls.Add(objLabelDisplay);
         }
 
-        
         //Metodo Para CrearBotones
         private void NuevosBotones()
         {
@@ -57,7 +57,13 @@ namespace Calculator
             objButton2.Location = new Point(8, 386);
             objButton2.Text = "1";
             cls_CnsBotones.ConstructorDeBotones(objButton2);
+            //Asignar El Evento Click Al Boton
+            objButton2.Click += Event_Button_Click;
+
             this.Controls.Add(objButton2);
+            
+
+
 
             //Button 4
             Button objButton3 = new Button();
@@ -236,9 +242,21 @@ namespace Calculator
 
         }
 
+        //Manejador De Evento Click
+        public void Event_Button_Click(object sender, EventArgs e)
+        {
+            Button clickedButton = sender as Button; //Marca El Boton Que Hizo Click
+
+            if (clickedButton != null)
+            {
+                objLabelDisplay.Text = clickedButton.Text; //Agrega El Texto Del Boton Al Display
+            }
+        }
+
+
         private void InitializeComponent()
         {
-            this.SuspendLayout();
+            this.SuspendLayout(); 
             // 
             // frmCalculator
             // 
