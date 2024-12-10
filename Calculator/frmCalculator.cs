@@ -106,8 +106,8 @@ namespace Calculator
             objButton10.Text = "+";
             cls_CnsBotones.ConstructorDeBotones(objButton10);
             //En Esta Propiedad Se Sobreescribe El Metodo Del Color
-            objButton10.BackColor = Color.SteelBlue;
-            objButton10.ForeColor = Color.White;
+            objButton10.BackColor = Color.WhiteSmoke;
+            objButton10.ForeColor = Color.SteelBlue;
             this.Controls.Add(objButton10);
 
             //Button 5
@@ -130,8 +130,8 @@ namespace Calculator
             objButton13.Text = "-";
             cls_CnsBotones.ConstructorDeBotones(objButton13);
             //En Esta Propiedad Se Sobreescribe El Metodo Del Color
-            objButton13.BackColor = Color.SteelBlue;
-            objButton13.ForeColor = Color.White;
+            objButton13.BackColor = Color.WhiteSmoke;
+            objButton13.ForeColor = Color.SteelBlue;
             this.Controls.Add(objButton13);
 
             //Button 8
@@ -153,8 +153,8 @@ namespace Calculator
             objButton16.Location = new Point(218,278);
             objButton16.Text = "*";
             cls_CnsBotones.ConstructorDeBotones(objButton16);
-            objButton16.BackColor = Color.SteelBlue;
-            objButton16.ForeColor = Color.White;
+            objButton16.BackColor = Color.WhiteSmoke;
+            objButton16.ForeColor = Color.SteelBlue;
             this.Controls.Add(objButton16);
 
             //Button ÷
@@ -162,8 +162,8 @@ namespace Calculator
             objButton17.Location = new Point(218,224);
             objButton17.Text = "÷";
             cls_CnsBotones.ConstructorDeBotones(objButton17);
-            objButton17.BackColor = Color.SteelBlue;
-            objButton17.ForeColor = Color.White;
+            objButton17.BackColor = Color.WhiteSmoke;
+            objButton17.ForeColor = Color.SteelBlue;
             this.Controls.Add(objButton17);
 
             //Button «
@@ -171,8 +171,8 @@ namespace Calculator
             objButton18.Location = new Point(218,170);
             objButton18.Text = "«";
             cls_CnsBotones.ConstructorDeBotones(objButton18);
-            objButton18.BackColor = Color.SteelBlue;
-            objButton18.ForeColor = Color.White;
+            objButton18.BackColor = Color.WhiteSmoke;
+            objButton18.ForeColor = Color.SteelBlue;
             this.Controls.Add(objButton18);
 
             // Button "1/x"
@@ -201,6 +201,8 @@ namespace Calculator
             objButton22.Location = new Point(8,170);
             objButton22.Text = "‰";
             cls_CnsBotones.ConstructorDeBotones(objButton22);
+            objButton22.BackColor = Color.WhiteSmoke;
+            objButton22.ForeColor = Color.SteelBlue;
             this.Controls.Add(objButton22);
 
             //Buton CE
@@ -208,6 +210,8 @@ namespace Calculator
             objButton23.Location = new Point(78,170);
             objButton23.Text = "CE";
             cls_CnsBotones.ConstructorDeBotones(objButton23);
+            objButton23.BackColor = Color.WhiteSmoke;
+            objButton23.ForeColor = Color.SteelBlue;
             this.Controls.Add(objButton23);
 
             //Button C
@@ -215,6 +219,8 @@ namespace Calculator
             objButton24.Location = new Point(148,170);
             objButton24.Text = "C";
             cls_CnsBotones.ConstructorDeBotones(objButton24);
+            objButton24.BackColor = Color.WhiteSmoke;
+            objButton24.ForeColor = Color.SteelBlue;
             this.Controls.Add(objButton24);
 
         }
