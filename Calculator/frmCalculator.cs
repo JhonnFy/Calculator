@@ -210,6 +210,13 @@ namespace Calculator
             cls_CnsBotones.ConstructorDeBotones(objButton23);
             this.Controls.Add(objButton23);
 
+            //Button C
+            Button objButton24 = new Button();
+            objButton24.Location = new Point(148,170);
+            objButton24.Text = "C";
+            cls_CnsBotones.ConstructorDeBotones(objButton24);
+            this.Controls.Add(objButton24);
+
         }
 
         private void InitializeComponent()
