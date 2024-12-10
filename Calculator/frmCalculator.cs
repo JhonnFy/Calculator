@@ -196,6 +196,13 @@ namespace Calculator
             cls_CnsBotones.ConstructorDeBotones(objButton21);
             this.Controls.Add(objButton21);
 
+            //Button ‰
+            Button objButton22 = new Button();
+            objButton22.Location = new Point(8,170);
+            objButton22.Text = "‰";
+            cls_CnsBotones.ConstructorDeBotones(objButton22);
+            this.Controls.Add(objButton22);
+
         }
 
         private void InitializeComponent()
