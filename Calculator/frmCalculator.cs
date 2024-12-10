@@ -175,6 +175,13 @@ namespace Calculator
             objButton18.ForeColor = Color.White;
             this.Controls.Add(objButton18);
 
+            // Button
+            Button objButton19 = new Button();
+            objButton19.Location = new Point(8,224);
+            objButton19.Text = "1/x";
+            cls_CnsBotones.ConstructorDeBotones(objButton19);
+            this.Controls.Add(objButton19);
+
         }
 
         private void InitializeComponent()
