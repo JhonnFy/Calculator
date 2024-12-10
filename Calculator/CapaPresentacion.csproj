@@ -53,7 +53,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="cls_AuxLabel.cs" />
+    <Compile Include="cls_AuxDisplay.cs" />
     <Compile Include="cls_CnsBotones.cs" />
     <Compile Include="frmCalculator.cs">
       <SubType>Form</SubType>

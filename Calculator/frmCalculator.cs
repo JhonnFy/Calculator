@@ -22,12 +22,23 @@ namespace Calculator
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
 
             NuevosBotones();
+            NuevoDisplay();
 
         }
 
         private void frmCalculator_Load(object sender, EventArgs e)
         {
 
+        }
+
+        //Metodo Para CrearDisplay
+        private void NuevoDisplay()
+        {
+            Label objLabelDisplay = new Label();
+            objLabelDisplay.BackColor = Color.Red;
+            objLabelDisplay.ForeColor = Color.Blue;
+            cls_AuxDisplay.ConstructorDeDisplay(objLabelDisplay);
+            this.Controls.Add(objLabelDisplay);
         }
 
         
