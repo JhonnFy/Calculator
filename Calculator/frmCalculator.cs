@@ -175,12 +175,26 @@ namespace Calculator
             objButton18.ForeColor = Color.White;
             this.Controls.Add(objButton18);
 
-            // Button
+            // Button "1/x"
             Button objButton19 = new Button();
             objButton19.Location = new Point(8,224);
             objButton19.Text = "1/x";
             cls_CnsBotones.ConstructorDeBotones(objButton19);
             this.Controls.Add(objButton19);
+
+            //Button x2
+            Button objButton20 = new Button();
+            objButton20.Location = new Point(78,224);
+            objButton20.Text = "x2";
+            cls_CnsBotones.ConstructorDeBotones(objButton20);
+            this.Controls.Add(objButton20);
+
+            //Button 2√x
+            //Button objButton21 = new Button();
+            //objButton21.Location = new Point(148,224);
+            //objButton21.Text = "2√x";
+            //cls_CnsBotones.ConstructorDeBotones(objButton21);
+            //this.Controls.Add(objButton21);
 
         }
 
