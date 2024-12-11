@@ -107,6 +107,8 @@ namespace Calculator
             //En Esta Propiedad Se Sobreescribe El Metodo Del Color
             objButton7.BackColor = Color.SteelBlue;
             objButton7.ForeColor = Color.White;
+            //Asignar El Evento Click Al Button
+            objButton7.Click += Event_Button_Click;
             this.Controls.Add(objButton7);
 
             //Button 2
