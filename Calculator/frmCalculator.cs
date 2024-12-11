@@ -51,7 +51,7 @@ namespace Calculator
             objButton1.Text = "±";
             cls_CnsBotones.ConstructorDeBotones(objButton1);
             //Asignar El Evento Click Al Button
-            objButton1.Click += Event_Button_Click;
+            //objButton1.Click += Event_Button_Click;
             this.Controls.Add(objButton1);
 
             //Button 1
@@ -96,7 +96,7 @@ namespace Calculator
             objButton6.Text = ",";
             cls_CnsBotones.ConstructorDeBotones(objButton6);
             //Asignar El Evento Click Al Button
-            objButton6.Click += Event_Button_Click;
+            //objButton6.Click += Event_Button_Click;
             this.Controls.Add(objButton6);
 
             //Button =
@@ -125,6 +125,8 @@ namespace Calculator
             objButton9.Location = new Point(148,386);
             objButton9.Text = "3";
             cls_CnsBotones.ConstructorDeBotones(objButton9);
+            //Asignar El Evento Click Al Button
+            objButton9.Click += Event_Button_Click;
             this.Controls.Add(objButton9);
 
             //Button +
