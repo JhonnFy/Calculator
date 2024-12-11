@@ -38,6 +38,7 @@ namespace Calculator
             objLabelDisplay = new Label(); //Inicializar El Campo
             objLabelDisplay.BackColor = Color.Red;
             objLabelDisplay.ForeColor = Color.Blue;
+            objLabelDisplay.Text = "0";
             cls_AuxDisplay.ConstructorDeDisplay(objLabelDisplay);
             this.Controls.Add(objLabelDisplay);
         }
@@ -256,20 +257,33 @@ namespace Calculator
             objButton24.Location = new Point(148,170);
             objButton24.Text = "C";
             cls_CnsBotones.ConstructorDeBotones(objButton24);
+            //Asignar El Evento Click Al Button
+            objButton24.Click += Event_Button_Delete;
             objButton24.BackColor = Color.WhiteSmoke;
             objButton24.ForeColor = Color.SteelBlue;
             this.Controls.Add(objButton24);
 
         }
 
-        //Manejador De Evento Click
+
+        //Metodo Evento Click Borrar
+        public void Event_Button_Delete(object sender, EventArgs e)
+        {
+            objLabelDisplay.Text = "";
+        }
+
+        //Metodo Evento Click
         public void Event_Button_Click(object sender, EventArgs e)
         {
             Button clickedButton = sender as Button; //Marca El Boton Que Hizo Click
 
-            if (clickedButton != null)
+            if (objLabelDisplay.Text == "0")
             {
-                objLabelDisplay.Text = clickedButton.Text; //Agrega El Texto Del Boton Al Display
+                objLabelDisplay.Text = clickedButton.Text;
+            }
+            else
+            {
+                objLabelDisplay.Text += clickedButton.Text;
             }
         }
 
