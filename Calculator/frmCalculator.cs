@@ -250,6 +250,8 @@ namespace Calculator
             objButton23.Location = new Point(78,170);
             objButton23.Text = "CE";
             cls_CnsBotones.ConstructorDeBotones(objButton23);
+            //Asignar El Evento Click Al Button
+            objButton23.Click += Event_Button_Delete;
             objButton23.BackColor = Color.WhiteSmoke;
             objButton23.ForeColor = Color.SteelBlue;
             this.Controls.Add(objButton23);
