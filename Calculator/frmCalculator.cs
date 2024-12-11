@@ -179,8 +179,10 @@ namespace Calculator
             //Button 9
             Button objButton15 = new Button();
             objButton15.Location = new Point(148,278);
-            objButton15.Text = "9";
+            objButton15.Text = "9";  
             cls_CnsBotones.ConstructorDeBotones(objButton15);
+            //Asignar El Evento Click Al Button
+            objButton15.Click += Event_Button_Click;
             this.Controls.Add(objButton15);
 
             //Button *
