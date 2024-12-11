@@ -50,6 +50,8 @@ namespace Calculator
             objButton1.Location = new Point(8, 440); //Filas Columnas
             objButton1.Text = "±";
             cls_CnsBotones.ConstructorDeBotones(objButton1);
+            //Asignar El Evento Click Al Button
+            objButton1.Click += Event_Button_Click;
             this.Controls.Add(objButton1);
 
             //Button 1
@@ -57,7 +59,7 @@ namespace Calculator
             objButton2.Location = new Point(8, 386);
             objButton2.Text = "1";
             cls_CnsBotones.ConstructorDeBotones(objButton2);
-            //Asignar El Evento Click Al Boton
+            //Asignar El Evento Click Al Button
             objButton2.Click += Event_Button_Click;
             this.Controls.Add(objButton2);
             
