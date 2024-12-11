@@ -153,6 +153,8 @@ namespace Calculator
             objButton12.Location = new Point(148,332);
             objButton12.Text = "6";
             cls_CnsBotones.ConstructorDeBotones(objButton12);
+            //Asignar El Evento Click Al Button
+            objButton12.Click += Event_Button_Click;
             this.Controls.Add(objButton12);
 
             //Button -
