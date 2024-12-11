@@ -108,7 +108,7 @@ namespace Calculator
             objButton7.BackColor = Color.SteelBlue;
             objButton7.ForeColor = Color.White;
             //Asignar El Evento Click Al Button
-            objButton7.Click += Event_Button_Click;
+            //objButton7.Click += Event_Button_Click;
             this.Controls.Add(objButton7);
 
             //Button 2
@@ -173,7 +173,7 @@ namespace Calculator
             objButton14.Text = "8";
             cls_CnsBotones.ConstructorDeBotones(objButton14);
             //Asignar El Evento Click Al Button
-            objButton13.Click += Event_Button_Click;
+            objButton14.Click += Event_Button_Click;
             this.Controls.Add(objButton14);
 
             //Button 9
