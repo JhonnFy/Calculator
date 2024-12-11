@@ -211,6 +211,8 @@ namespace Calculator
             cls_CnsBotones.ConstructorDeBotones(objButton18);
             objButton18.BackColor = Color.WhiteSmoke;
             objButton18.ForeColor = Color.SteelBlue;
+            //Evento Click Event_Button_Deletec
+            objButton18.Click += Event_Button_Deletec;
             this.Controls.Add(objButton18);
 
             // Button "1/x"
@@ -270,6 +272,17 @@ namespace Calculator
         public void Event_Button_Delete(object sender, EventArgs e)
         {
             objLabelDisplay.Text = "";
+        }
+
+        //Metodo Evento_Click Borrar El Ultimo Caracter Ingresado
+        public void Event_Button_Deletec(object sender, EventArgs e)
+        {
+            //Verifica Si El Display No Esta Vacio
+            if (objLabelDisplay.Text.Length >0)
+            {
+                //Eliminar El Ultimo Caracter Ingresado
+                objLabelDisplay.Text = objLabelDisplay.Text.Substring(0, objLabelDisplay.Text.Length -1);
+            }
         }
 
         //Metodo Evento Click
