@@ -36,10 +36,8 @@ namespace Calculator
         private void NuevoDisplay()
         {
             objLabelDisplay = new Label(); //Inicializar El Campo
-            objLabelDisplay.BackColor = Color.Red;
-            objLabelDisplay.ForeColor = Color.Blue;
             objLabelDisplay.Text = "0";
-            cls_AuxDisplay.ConstructorDeDisplay(objLabelDisplay);
+            cls_AuxDisplay.ConstructorDeDisplay(objLabelDisplay, this);
             this.Controls.Add(objLabelDisplay);
         }
 
