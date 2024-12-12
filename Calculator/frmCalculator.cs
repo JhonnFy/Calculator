@@ -322,13 +322,37 @@ namespace Calculator
 
         //Metodos Para Operar La Calculadora
 
-        //Object Sender: Este Es El Parametro Que Representa El Objeto Que Esta Causando El Evento
-        //EventArgs e: Parametro De Clase
-
-        //Metodo Suma
-        private void btnSummar_Click(object sender, EventArgs e)
+        //Metodo Igual =
+        private void Event_Button_Igual(object sender, EventArgs e)
         {
 
         }
+
+        //Metodo Suma +
+        private void Event_Button_Sumar(object sender, EventArgs e)
+        {
+
+        }
+
+        //Metodo Resta -
+        private void Event_Button_Resta(object sender, EventArgs e)
+        {
+
+        }
+
+        //Metodo Multiplicar *
+        private void Event_Button_Multiplicar(object sender, EventArgs e)
+        {
+
+        }
+
+        //Metodo Dividir ÷
+        private void Event_Button_Dividir(object sender, EventArgs e)
+        {
+
+        }
+
+
+
     }
 }
