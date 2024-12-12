@@ -269,7 +269,6 @@ namespace Calculator
 
         }
 
-
         //Metodo Evento Click Borrar
         public void Event_Button_Delete(object sender, EventArgs e)
         {
@@ -317,6 +316,17 @@ namespace Calculator
         }
 
         private void frmCalculator_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        //Metodos Para Operar La Calculadora
+
+        //Object Sender: Este Es El Parametro Que Representa El Objeto Que Esta Causando El Evento
+        //EventArgs e: Parametro De Clase
+
+        //Metodo Suma
+        private void btnSummar_Click(object sender, EventArgs e)
         {
 
         }
