@@ -314,11 +314,13 @@ namespace Calculator
 
         private void InitializeComponent()
         {
-            this.SuspendLayout(); 
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCalculator));
+            this.SuspendLayout();
             // 
             // frmCalculator
             // 
             this.ClientSize = new System.Drawing.Size(290, 494);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCalculator";
             this.Load += new System.EventHandler(this.frmCalculator_Load_1);
             this.ResumeLayout(false);
