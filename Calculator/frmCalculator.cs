@@ -22,6 +22,7 @@ namespace Calculator
 
             this.StartPosition = FormStartPosition.CenterScreen;
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
+            this.Text = "Calculator";
 
             NuevoDisplay();
             NuevosBotones();
