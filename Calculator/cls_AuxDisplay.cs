@@ -10,16 +10,16 @@ namespace Calculator
 {
     public static class cls_AuxDisplay
     {
-        public static void ConstructorDeDisplay(Label objLabel, Form formulario)
+        public static void ConstructorDeDisplay(Label objLabelDisplay, Form formulario)
         {
-            objLabel.TextAlign = ContentAlignment.MiddleRight;
-            objLabel.Font = new Font("Segoe UI", 20, FontStyle.Regular);
-            objLabel.BackColor = formulario.BackColor;
-            objLabel.ForeColor = Color.Black;
+            objLabelDisplay.TextAlign = ContentAlignment.MiddleRight;
+            objLabelDisplay.Font = new Font("Segoe UI", 20, FontStyle.Regular);
+            objLabelDisplay.BackColor = formulario.BackColor;
+            objLabelDisplay.ForeColor = Color.Black;
 
             // Posición y tamaño del display
-            objLabel.Location = new Point(10, 60);
-            objLabel.Size = new Size(formulario.Width - 20, 70);
+            objLabelDisplay.Location = new Point(10, 60);
+            objLabelDisplay.Size = new Size(formulario.Width - 20, 70);
         }
 
 

@@ -25,6 +25,7 @@ namespace Calculator
 
             NuevoDisplay();
             NuevosBotones();
+            NuevoLabel();
         }
 
         private void frmCalculator_Load(object sender, EventArgs e)
@@ -39,6 +40,14 @@ namespace Calculator
             objLabelDisplay.Text = "0";
             cls_AuxDisplay.ConstructorDeDisplay(objLabelDisplay, this);
             this.Controls.Add(objLabelDisplay);
+        }
+
+        //Metodo Para Crear Label
+        public void NuevoLabel()
+        {
+            Label objLabel = new Label();
+            cls_CnsLabel.ConstructorDeLabel(objLabel);
+            this.Controls.Add(objLabel);
         }
 
         //Metodo Para CrearBotones
@@ -266,6 +275,8 @@ namespace Calculator
             this.Controls.Add(objButton24);
 
         }
+
+      
 
         //Metodo Evento Click Borrar
         public void Event_Button_Delete(object sender, EventArgs e)

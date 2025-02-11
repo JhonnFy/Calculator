@@ -55,6 +55,7 @@
   <ItemGroup>
     <Compile Include="cls_AuxDisplay.cs" />
     <Compile Include="cls_CnsBotones.cs" />
+    <Compile Include="cls_CnsLabel.cs" />
     <Compile Include="frmCalculator.cs">
       <SubType>Form</SubType>
     </Compile>
