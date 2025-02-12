@@ -16,6 +16,7 @@ namespace Calculator
     {
 
         private Label objLabelDisplay; //Campo De Clase
+        private Label objLabelSegundoDisplay; //Campo De Clase
         private cls_CnsOperaciones obj_Operaciones;
 
         //------------------------------------------------------------------------------
@@ -31,8 +32,8 @@ namespace Calculator
             obj_Operaciones = new cls_CnsOperaciones();
 
             NuevoDisplay();
+            SegundoDisplay();
             NuevosBotones();
-            NuevoLabel();
         }
 
         private void frmCalculator_Load(object sender, EventArgs e)
@@ -47,18 +48,17 @@ namespace Calculator
         {
             objLabelDisplay = new Label(); //Inicializar El Campo
             objLabelDisplay.Text = "0";
-            cls_AuxDisplay.ConstructorDeDisplay(objLabelDisplay, this);
+            cls_CnsDisplay.ConstructorDeDisplay(objLabelDisplay, this);
             this.Controls.Add(objLabelDisplay);
         }
-
         //------------------------------------------------------------------------------
-        //Metodo Para Crear Label
+        //Metodo Para CrearSegundoDisplay
         //------------------------------------------------------------------------------
-        public void NuevoLabel()
+        public void SegundoDisplay()
         {
-            Label objLabel = new Label();
-            cls_CnsLabel.ConstructorDeLabel(objLabel);
-            this.Controls.Add(objLabel);
+            objLabelSegundoDisplay = new Label(); //Inicializar El Campo
+            cls_CnsDisplayDos.ConstructorDeDisplayDos(objLabelSegundoDisplay, this);
+            this.Controls.Add(objLabelSegundoDisplay);
         }
 
         //------------------------------------------------------------------------------
@@ -331,6 +331,7 @@ namespace Calculator
         public void Event_Button_Delete(object sender, EventArgs e)
         {
             objLabelDisplay.Text = "0";
+            objLabelSegundoDisplay.Text = "";
         }
 
         //------------------------------------------------------------------------------
@@ -347,7 +348,7 @@ namespace Calculator
         }
 
         //------------------------------------------------------------------------------
-        //Metodo Evento Click
+        //Metodo Que Imprime En El Display La Selección Del Usuario
         //------------------------------------------------------------------------------
         public void Event_Button_Click(object sender, EventArgs e)
         {
@@ -361,6 +362,7 @@ namespace Calculator
             {
                 objLabelDisplay.Text += clickedButton.Text;
             }
+
         }
 
 
@@ -406,7 +408,7 @@ namespace Calculator
             //Almacenar El Operador
             obj_Operaciones.SetOperador("-");
             //Limpiar El Display Para Ingresar El Siguiente Valor
-            objLabelDisplay.Text = "";
+            //objLabelDisplay.Text = "";
         }
         //------------------------------------------------------------------------------
         //Metodo Multiplicar *
@@ -418,7 +420,7 @@ namespace Calculator
             //almacenar El Operador
             obj_Operaciones.SetOperador("*");
             //Limpiar El Display Para Ingresar El Siguiente Valor
-            objLabelDisplay.Text = "";
+            //objLabelDisplay.Text = "";
         }
 
         //------------------------------------------------------------------------------
@@ -428,10 +430,9 @@ namespace Calculator
         {
             //Almacenar El Primer Número
             obj_Operaciones.SetNum1(double.Parse(objLabelDisplay.Text));
+
             //almacenar El Operador
             obj_Operaciones.SetOperador("/");
-            //Limpiar El Display Para Ingresar El Siguiente Valor
-            objLabelDisplay.Text = "";
         }
 
         //------------------------------------------------------------------------------
@@ -444,6 +445,8 @@ namespace Calculator
 
             //Realizar La Operación
             double resultado = obj_Operaciones.OperacionesMatematicas();
+
+            //Imprimir el resultado
             objLabelDisplay.Text = resultado.ToString();
         }
 

@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 namespace Calculator
 {
-    public static class cls_AuxDisplay
+    public  class cls_AuxDisplay
     {
-        public static void ConstructorDeDisplay(Label objLabelDisplay, Form formulario)
+        public  cls_AuxDisplay(Label objLabelDisplay, Form formulario)
         {
             objLabelDisplay.TextAlign = ContentAlignment.MiddleRight;
             objLabelDisplay.Font = new Font("Segoe UI", 20, FontStyle.Regular);
@@ -21,10 +21,5 @@ namespace Calculator
             objLabelDisplay.Location = new Point(10, 60);
             objLabelDisplay.Size = new Size(formulario.Width - 20, 70);
         }
-
-
     }
 }
-
-
-
