@@ -229,6 +229,7 @@ namespace Calculator
             cls_CnsBotones.ConstructorDeBotones(objButton16);
             objButton16.BackColor = Color.WhiteSmoke;
             objButton16.ForeColor = Color.SteelBlue;
+            objButton16.Click += Event_Button_Multiplicar; //Asignar El Evento Click Al Button
             this.Controls.Add(objButton16);
 
             //------------------------------------------------------------------------------
@@ -383,7 +384,7 @@ namespace Calculator
         }
 
         //------------------------------------------------------------------------------
-        //Metodo Suma +
+        //Metodo Sumar +
         //------------------------------------------------------------------------------
         private void Event_Button_Sumar(object sender, EventArgs e)
         {
@@ -395,7 +396,7 @@ namespace Calculator
             objLabelDisplay.Text = "";
         }
         //------------------------------------------------------------------------------
-        //Metodo Resta -
+        //Metodo Restar -
         //------------------------------------------------------------------------------
         private void Event_Button_Restar(object sender, EventArgs e)
         {
@@ -403,11 +404,21 @@ namespace Calculator
             obj_Operaciones.SetNum1(double.Parse(objLabelDisplay.Text));
             //Almacenar El Operador
             obj_Operaciones.SetOperador("-");
-            //Limpiar El Display Para Ingresar El Siguiente Calor
+            //Limpiar El Display Para Ingresar El Siguiente Valor
             objLabelDisplay.Text = "";
         }
-
-
+        //------------------------------------------------------------------------------
+        //Metodo Multiplicar *
+        //------------------------------------------------------------------------------
+        private void Event_Button_Multiplicar(object sender, EventArgs e)
+        {
+            //Almacenar El Primer Número
+            obj_Operaciones.SetNum1(double.Parse(objLabelDisplay.Text));
+            //almacenar El Operador
+            obj_Operaciones.SetOperador("*");
+            //Limpiar El Display Para Ingresar El Siguiente Valor
+            objLabelDisplay.Text = "";
+        }
 
         //------------------------------------------------------------------------------
         //Metodo Resultado =

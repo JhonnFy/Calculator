@@ -38,7 +38,9 @@ namespace Calculator
                 case "-":
                     resultado = num1 - num2;
                     break;
-                    // Otros operadores
+                case "*":
+                    resultado = num1 * num2;
+                    break;
             }
             return resultado;
         }
