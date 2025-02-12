@@ -278,11 +278,10 @@ namespace Calculator
         }
 
       
-
         //Metodo Evento Click Borrar
         public void Event_Button_Delete(object sender, EventArgs e)
         {
-            objLabelDisplay.Text = "";
+            objLabelDisplay.Text = "0";
         }
 
         //Metodo Evento_Click Borrar El Ultimo Caracter Ingresado
