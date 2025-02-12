@@ -4,9 +4,11 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Calculator;
 
 namespace Calculator
 {
@@ -14,6 +16,7 @@ namespace Calculator
     {
 
         private Label objLabelDisplay; //Campo De Clase
+        private cls_CnsOperaciones obj_Operaciones;
 
         //Metodo Constructor
         public frmCalculator()
@@ -23,6 +26,7 @@ namespace Calculator
             this.StartPosition = FormStartPosition.CenterScreen;
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
             this.Text = "Calculator";
+            obj_Operaciones = new cls_CnsOperaciones();
 
             NuevoDisplay();
             NuevosBotones();
@@ -60,7 +64,6 @@ namespace Calculator
             objButton1.Text = "±";
             cls_CnsBotones.ConstructorDeBotones(objButton1);
             //Asignar El Evento Click Al Button
-            //objButton1.Click += Event_Button_Click;
             this.Controls.Add(objButton1);
 
             //Button 1
@@ -117,7 +120,7 @@ namespace Calculator
             objButton7.BackColor = Color.SteelBlue;
             objButton7.ForeColor = Color.White;
             //Asignar El Evento Click Al Button
-            //objButton7.Click += Event_Button_Click;
+            objButton7.Click += Event_Button_Resultado;
             this.Controls.Add(objButton7);
 
             //Button 2
@@ -144,6 +147,7 @@ namespace Calculator
             objButton10.Text = "+";
             cls_CnsBotones.ConstructorDeBotones(objButton10);
             //En Esta Propiedad Se Sobreescribe El Metodo Del Color
+            objButton10.Click += Event_Button_Sumar;
             objButton10.BackColor = Color.WhiteSmoke;
             objButton10.ForeColor = Color.SteelBlue;
             this.Controls.Add(objButton10);
@@ -277,7 +281,12 @@ namespace Calculator
 
         }
 
-      
+        private void ObjButton17_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+
         //Metodo Evento Click Borrar
         public void Event_Button_Delete(object sender, EventArgs e)
         {
@@ -333,37 +342,28 @@ namespace Calculator
 
         //Metodos Para Operar La Calculadora
 
-        //Metodo Igual =
-        private void Event_Button_Igual(object sender, EventArgs e)
-        {
-
-        }
-
         //Metodo Suma +
         private void Event_Button_Sumar(object sender, EventArgs e)
         {
+            //Almacenar El Primer Número
+            obj_Operaciones.SetNum1(double.Parse(objLabelDisplay.Text));
+            //Almacenar El Operador
+            obj_Operaciones.SetOperador("+");
+            //Limpiar El Display Pära Ingresar El Siguiente Valor
+            objLabelDisplay.Text = "";
 
         }
 
-        //Metodo Resta -
-        private void Event_Button_Resta(object sender, EventArgs e)
+        private void Event_Button_Resultado(object sender, EventArgs e)
         {
+            //Almacenar El Segundo Número
+            obj_Operaciones.SetNum2(double.Parse(objLabelDisplay.Text));
 
+            //Realizar La Operación
+            double resultado = obj_Operaciones.OperacionesMatematicas();
+            objLabelDisplay.Text = resultado.ToString();
+            
         }
-
-        //Metodo Multiplicar *
-        private void Event_Button_Multiplicar(object sender, EventArgs e)
-        {
-
-        }
-
-        //Metodo Dividir ÷
-        private void Event_Button_Dividir(object sender, EventArgs e)
-        {
-
-        }
-
-
 
     }
 }
