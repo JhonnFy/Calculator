@@ -241,6 +241,7 @@ namespace Calculator
             cls_CnsBotones.ConstructorDeBotones(objButton17);
             objButton17.BackColor = Color.WhiteSmoke;
             objButton17.ForeColor = Color.SteelBlue;
+            objButton17.Click += Event_Button_Dividir;
             this.Controls.Add(objButton17);
 
             //------------------------------------------------------------------------------
@@ -416,6 +417,19 @@ namespace Calculator
             obj_Operaciones.SetNum1(double.Parse(objLabelDisplay.Text));
             //almacenar El Operador
             obj_Operaciones.SetOperador("*");
+            //Limpiar El Display Para Ingresar El Siguiente Valor
+            objLabelDisplay.Text = "";
+        }
+
+        //------------------------------------------------------------------------------
+        //Metodo Dividir /
+        //------------------------------------------------------------------------------
+        private void Event_Button_Dividir(object sender, EventArgs e)
+        {
+            //Almacenar El Primer Número
+            obj_Operaciones.SetNum1(double.Parse(objLabelDisplay.Text));
+            //almacenar El Operador
+            obj_Operaciones.SetOperador("/");
             //Limpiar El Display Para Ingresar El Siguiente Valor
             objLabelDisplay.Text = "";
         }

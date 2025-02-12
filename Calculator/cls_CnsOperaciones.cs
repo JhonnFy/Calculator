@@ -41,6 +41,16 @@ namespace Calculator
                 case "*":
                     resultado = num1 * num2;
                     break;
+                case "/":
+                    if (num2 != 0)
+                    {
+                        resultado = num1 / num2;
+                    }
+                    else
+                    {
+                        resultado = 0;  
+                    }
+                    break;
             }
             return resultado;
         }
