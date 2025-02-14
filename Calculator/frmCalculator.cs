@@ -331,6 +331,7 @@ namespace Calculator
         public void Event_Button_Delete(object sender, EventArgs e)
         {
             objLabelDisplay.Text = "0";
+            objLabelSegundoDisplay.Text = "";
         }
 
         //------------------------------------------------------------------------------
