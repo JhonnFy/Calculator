@@ -47,6 +47,7 @@ namespace Calculator
         public double OperacionesMatematicas()
         {
             double resultado = 0;
+
             switch (operador)
             {
                 case "+":
@@ -65,7 +66,7 @@ namespace Calculator
                     }
                     else
                     {
-                        resultado = 0;  
+                        resultado =0;
                     }
                     break;
             }

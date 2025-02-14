@@ -63,7 +63,6 @@ namespace Calculator
             this.Controls.Add(objLabelTercerDisplay);
         }
 
-
         //------------------------------------------------------------------------------
         //Metodo Para CrearSegundoDisplay
         //------------------------------------------------------------------------------
@@ -457,10 +456,10 @@ namespace Calculator
             obj_Operaciones.SetNum2(double.Parse(objLabelDisplay.Text));
 
             //Realizar La Operación
-            double resultado = obj_Operaciones.OperacionesMatematicas();
+            double salida = obj_Operaciones.OperacionesMatematicas();
 
             //Imprimir el resultado
-            objLabelDisplay.Text = resultado.ToString();
+            objLabelDisplay.Text = salida.ToString();
 
             // Usar los métodos get para obtener los valores de num1 y num2
             objLabelSegundoDisplay.Text = "(" + obj_Operaciones.GetNum1().ToString() + "" + obj_Operaciones.GetOperador().ToString() + "" + obj_Operaciones.GetNum2().ToString() + ")=";
