@@ -15,9 +15,9 @@ namespace Calculator
         public static void ConstructorDeDisplayDos(Label objLavelDisplayDos, Form formulario)
         {
             objLavelDisplayDos.TextAlign = ContentAlignment.MiddleRight;
-            objLavelDisplayDos.Font = new Font("Segoe UI", 20, FontStyle.Regular);
+            objLavelDisplayDos.Font = new Font("Segoe UI", 15, FontStyle.Regular);
             objLavelDisplayDos.BackColor = formulario.BackColor;
-            objLavelDisplayDos.ForeColor = Color.Red;
+            objLavelDisplayDos.ForeColor = Color.SteelBlue;
 
             //Posición y tamaño del display2
             objLavelDisplayDos.Location = new Point(12, 12);

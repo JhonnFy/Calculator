@@ -22,6 +22,11 @@ namespace Calculator
             return num2;
         }
 
+        public string GetOperador()
+        {
+            return operador;
+        }
+
 
         public void SetNum1(double valor)
         {

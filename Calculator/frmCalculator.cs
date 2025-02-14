@@ -356,7 +356,7 @@ namespace Calculator
             if (objLabelDisplay.Text == "0")
             {
                 objLabelDisplay.Text = clickedButton.Text;
-
+                
             }
             else
             {
@@ -447,6 +447,9 @@ namespace Calculator
 
             //Imprimir el resultado
             objLabelDisplay.Text = resultado.ToString();
+
+            // Usar los métodos get para obtener los valores de num1 y num2
+            objLabelSegundoDisplay.Text = "(" + obj_Operaciones.GetNum1().ToString() + "" + obj_Operaciones.GetOperador().ToString() + "" + obj_Operaciones.GetNum2().ToString() + ")=";
         }
 
     }
