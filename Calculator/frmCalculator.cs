@@ -32,7 +32,7 @@ namespace Calculator
             obj_Operaciones = new cls_CnsOperaciones();
 
             NuevoDisplay();
-            SegundoDisplay();
+            //SegundoDisplay();
             NuevosBotones();
         }
 
@@ -54,12 +54,12 @@ namespace Calculator
         //------------------------------------------------------------------------------
         //Metodo Para CrearSegundoDisplay
         //------------------------------------------------------------------------------
-        public void SegundoDisplay()
-        {
-            objLabelSegundoDisplay = new Label(); //Inicializar El Campo
-            cls_CnsDisplayDos.ConstructorDeDisplayDos(objLabelSegundoDisplay, this);
-            this.Controls.Add(objLabelSegundoDisplay);
-        }
+        //public void SegundoDisplay()
+        //{
+        //    objLabelSegundoDisplay = new Label(); //Inicializar El Campo
+        //    cls_CnsDisplayDos.ConstructorDeDisplayDos(objLabelSegundoDisplay, this);
+        //    this.Controls.Add(objLabelSegundoDisplay);
+        //}
 
         //------------------------------------------------------------------------------
         //Metodo Para CrearBotones
@@ -157,18 +157,6 @@ namespace Calculator
             this.Controls.Add(objButton9);
 
             //------------------------------------------------------------------------------
-            //Button +
-            //------------------------------------------------------------------------------
-            Button objButton10 = new Button();
-            objButton10.Location = new Point(218,386);
-            objButton10.Text = "+";
-            cls_CnsBotones.ConstructorDeBotones(objButton10);
-            objButton10.Click += Event_Button_Sumar; //En Esta Propiedad Se Sobreescribe El Metodo Del Color
-            objButton10.BackColor = Color.WhiteSmoke;
-            objButton10.ForeColor = Color.SteelBlue;
-            this.Controls.Add(objButton10);
-
-            //------------------------------------------------------------------------------
             //Button 5
             //------------------------------------------------------------------------------
             Button objButton11 = new Button();
@@ -187,19 +175,7 @@ namespace Calculator
             cls_CnsBotones.ConstructorDeBotones(objButton12);
             objButton12.Click += Event_Button_Click; //Asignar El Evento Click Al Button
             this.Controls.Add(objButton12);
-
-            //------------------------------------------------------------------------------
-            //Button -
-            //------------------------------------------------------------------------------
-            Button objButton13 = new Button();
-            objButton13.Location = new Point(218, 332);
-            objButton13.Text = "-";
-            cls_CnsBotones.ConstructorDeBotones(objButton13);
-            objButton13.BackColor = Color.WhiteSmoke; //En Esta Propiedad Se Sobreescribe El Metodo Del Color
-            objButton13.ForeColor = Color.SteelBlue;
-            objButton13.Click += Event_Button_Restar;
-            this.Controls.Add(objButton13);
-
+            
             //------------------------------------------------------------------------------
             //Button 8
             //------------------------------------------------------------------------------
@@ -219,30 +195,6 @@ namespace Calculator
             cls_CnsBotones.ConstructorDeBotones(objButton15);
             objButton15.Click += Event_Button_Click; //Asignar El Evento Click Al Button
             this.Controls.Add(objButton15);
-
-            //------------------------------------------------------------------------------
-            //Button *
-            //------------------------------------------------------------------------------
-            Button objButton16 = new Button();
-            objButton16.Location = new Point(218,278);
-            objButton16.Text = "*";
-            cls_CnsBotones.ConstructorDeBotones(objButton16);
-            objButton16.BackColor = Color.WhiteSmoke;
-            objButton16.ForeColor = Color.SteelBlue;
-            objButton16.Click += Event_Button_Multiplicar; //Asignar El Evento Click Al Button
-            this.Controls.Add(objButton16);
-
-            //------------------------------------------------------------------------------
-            //Button ÷
-            //------------------------------------------------------------------------------
-            Button objButton17 = new Button();
-            objButton17.Location = new Point(218,224);
-            objButton17.Text = "÷";
-            cls_CnsBotones.ConstructorDeBotones(objButton17);
-            objButton17.BackColor = Color.WhiteSmoke;
-            objButton17.ForeColor = Color.SteelBlue;
-            objButton17.Click += Event_Button_Dividir;
-            this.Controls.Add(objButton17);
 
             //------------------------------------------------------------------------------
             //Button «
@@ -284,7 +236,7 @@ namespace Calculator
             this.Controls.Add(objButton21);
 
             //------------------------------------------------------------------------------
-            //Button ‰
+            //Button ‰ 
             //------------------------------------------------------------------------------
             Button objButton22 = new Button();
             objButton22.Location = new Point(8,170);
@@ -318,6 +270,54 @@ namespace Calculator
             objButton24.ForeColor = Color.SteelBlue;
             this.Controls.Add(objButton24);
 
+            //------------------------------------------------------------------------------
+            //Button +
+            //------------------------------------------------------------------------------
+            Button objButton10 = new Button();
+            objButton10.Location = new Point(218, 386);
+            objButton10.Text = "+";
+            cls_CnsBotones.ConstructorDeBotones(objButton10);
+            objButton10.BackColor = Color.WhiteSmoke;
+            objButton10.ForeColor = Color.SteelBlue;
+            objButton10.Click += Event_Button_Sumar;
+            this.Controls.Add(objButton10);
+
+            //------------------------------------------------------------------------------
+            //Button -
+            //------------------------------------------------------------------------------
+            Button objButton13 = new Button();
+            objButton13.Location = new Point(218, 332);
+            objButton13.Text = "-";
+            cls_CnsBotones.ConstructorDeBotones(objButton13);
+            objButton13.BackColor = Color.WhiteSmoke; 
+            objButton13.ForeColor = Color.SteelBlue;
+            objButton13.Click += Event_Button_Restar;
+            this.Controls.Add(objButton13);
+
+            //------------------------------------------------------------------------------
+            //Button *
+            //------------------------------------------------------------------------------
+            Button objButton16 = new Button();
+            objButton16.Location = new Point(218, 278);
+            objButton16.Text = "*";
+            cls_CnsBotones.ConstructorDeBotones(objButton16);
+            objButton16.BackColor = Color.WhiteSmoke;
+            objButton16.ForeColor = Color.SteelBlue;
+            objButton16.Click += Event_Button_Multiplicar; //Asignar El Evento Click Al Button
+            this.Controls.Add(objButton16);
+
+            //------------------------------------------------------------------------------
+            //Button ÷
+            //------------------------------------------------------------------------------
+            Button objButton17 = new Button();
+            objButton17.Location = new Point(218, 224);
+            objButton17.Text = "÷";
+            cls_CnsBotones.ConstructorDeBotones(objButton17);
+            objButton17.BackColor = Color.WhiteSmoke;
+            objButton17.ForeColor = Color.SteelBlue;
+            objButton17.Click += Event_Button_Dividir;
+            this.Controls.Add(objButton17);
+
         }
 
         private void ObjButton17_Click(object sender, EventArgs e)
@@ -331,7 +331,6 @@ namespace Calculator
         public void Event_Button_Delete(object sender, EventArgs e)
         {
             objLabelDisplay.Text = "0";
-            objLabelSegundoDisplay.Text = "";
         }
 
         //------------------------------------------------------------------------------
@@ -364,7 +363,6 @@ namespace Calculator
             }
 
         }
-
 
         private void InitializeComponent()
         {
@@ -408,7 +406,7 @@ namespace Calculator
             //Almacenar El Operador
             obj_Operaciones.SetOperador("-");
             //Limpiar El Display Para Ingresar El Siguiente Valor
-            //objLabelDisplay.Text = "";
+            objLabelDisplay.Text = "";
         }
         //------------------------------------------------------------------------------
         //Metodo Multiplicar *
@@ -420,7 +418,7 @@ namespace Calculator
             //almacenar El Operador
             obj_Operaciones.SetOperador("*");
             //Limpiar El Display Para Ingresar El Siguiente Valor
-            //objLabelDisplay.Text = "";
+            objLabelDisplay.Text = "";
         }
 
         //------------------------------------------------------------------------------
@@ -430,9 +428,10 @@ namespace Calculator
         {
             //Almacenar El Primer Número
             obj_Operaciones.SetNum1(double.Parse(objLabelDisplay.Text));
-
             //almacenar El Operador
             obj_Operaciones.SetOperador("/");
+            //Limpiar El Display Para Ingresar El Siguiente Valor
+            objLabelDisplay.Text = "";
         }
 
         //------------------------------------------------------------------------------
