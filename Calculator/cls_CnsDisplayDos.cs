@@ -16,12 +16,15 @@ namespace Calculator
         {
             objLavelDisplayDos.TextAlign = ContentAlignment.MiddleRight;
             objLavelDisplayDos.Font = new Font("Segoe UI", 10, FontStyle.Regular);
-            objLavelDisplayDos.BackColor = formulario.BackColor;
+            //objLavelDisplayDos.BackColor = formulario.BackColor;
+            objLavelDisplayDos.BackColor = Color.Red;
             objLavelDisplayDos.ForeColor = Color.SteelBlue;
 
             //Posición y tamaño del display2
-            objLavelDisplayDos.Location = new Point(2, 12);
-            objLavelDisplayDos.Size = new Size(formulario.Width - 20, 50);
+            //objLavelDisplayDos.Location = new Point(2, 12);
+            objLavelDisplayDos.Location = new Point(2, 28);
+            //objLavelDisplayDos.Size = new Size(formulario.Width - 20, 50);
+            objLavelDisplayDos.Size = new Size(formulario.Width - 10, 30);
         }
     }
 }

@@ -17,6 +17,7 @@ namespace Calculator
 
         private Label objLabelDisplay; //Campo De Clase
         private Label objLabelSegundoDisplay; //Campo De Clase
+        private Label objLabelTercerDisplay; //Campo De Clase
         private cls_CnsOperaciones obj_Operaciones;
 
         //------------------------------------------------------------------------------
@@ -34,6 +35,7 @@ namespace Calculator
             NuevoDisplay();
             SegundoDisplay();
             NuevosBotones();
+            NuevoLabelStandar();
         }
 
         private void frmCalculator_Load(object sender, EventArgs e)
@@ -54,6 +56,12 @@ namespace Calculator
         //------------------------------------------------------------------------------
         //Metodo Para Label Standard
         //------------------------------------------------------------------------------
+        private void NuevoLabelStandar()
+        {
+            objLabelTercerDisplay = new Label(); //Inicializar El Campo
+            cls_CnsDisplayTres.ConstructorDeDisplayTres(objLabelTercerDisplay, this);
+            this.Controls.Add(objLabelTercerDisplay);
+        }
 
 
         //------------------------------------------------------------------------------
