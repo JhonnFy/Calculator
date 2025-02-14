@@ -12,6 +12,17 @@ namespace Calculator
         private double num2;
         private string operador;
 
+        public double GetNum1()
+        {
+            return num1;
+        }
+
+        public double GetNum2()
+        {
+            return num2;
+        }
+
+
         public void SetNum1(double valor)
         {
             num1 = valor;
@@ -22,6 +33,7 @@ namespace Calculator
             this.operador = operador;
         }
 
+       
         public void SetNum2(double valor)
         {
             num2 = valor;

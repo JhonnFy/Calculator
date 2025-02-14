@@ -32,7 +32,7 @@ namespace Calculator
             obj_Operaciones = new cls_CnsOperaciones();
 
             NuevoDisplay();
-            //SegundoDisplay();
+            SegundoDisplay();
             NuevosBotones();
         }
 
@@ -54,12 +54,12 @@ namespace Calculator
         //------------------------------------------------------------------------------
         //Metodo Para CrearSegundoDisplay
         //------------------------------------------------------------------------------
-        //public void SegundoDisplay()
-        //{
-        //    objLabelSegundoDisplay = new Label(); //Inicializar El Campo
-        //    cls_CnsDisplayDos.ConstructorDeDisplayDos(objLabelSegundoDisplay, this);
-        //    this.Controls.Add(objLabelSegundoDisplay);
-        //}
+        public void SegundoDisplay()
+        {
+            objLabelSegundoDisplay = new Label(); //Inicializar El Campo
+            cls_CnsDisplayDos.ConstructorDeDisplayDos(objLabelSegundoDisplay, this);
+            this.Controls.Add(objLabelSegundoDisplay);
+        }
 
         //------------------------------------------------------------------------------
         //Metodo Para CrearBotones
@@ -356,12 +356,12 @@ namespace Calculator
             if (objLabelDisplay.Text == "0")
             {
                 objLabelDisplay.Text = clickedButton.Text;
+
             }
             else
             {
                 objLabelDisplay.Text += clickedButton.Text;
             }
-
         }
 
         private void InitializeComponent()
