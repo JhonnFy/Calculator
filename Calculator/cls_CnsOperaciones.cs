@@ -69,6 +69,9 @@ namespace Calculator
                         resultado =0;
                     }
                     break;
+                case "x²":
+                    resultado = num1 * num1;
+                    break;
             }
             return resultado;
         }

@@ -230,11 +230,12 @@ namespace Calculator
             this.Controls.Add(objButton19);
 
             //------------------------------------------------------------------------------
-            //Button x2
+            //Button x2 
             //------------------------------------------------------------------------------
             Button objButton20 = new Button();
             objButton20.Location = new Point(78,224);
-            objButton20.Text = "x2";
+            objButton20.Text = "x²";
+            objButton20.Click += Event_Burron_Exponente;
             cls_CnsBotones.ConstructorDeBotones(objButton20);
             this.Controls.Add(objButton20);
 
@@ -441,11 +442,23 @@ namespace Calculator
         {
             //Almacenar El Primer Número
             obj_Operaciones.SetNum1(double.Parse(objLabelDisplay.Text));
-            //almacenar El Operador
+            //Almacenar El Operador
             obj_Operaciones.SetOperador("/");
             //Limpiar El Display Para Ingresar El Siguiente Valor
             objLabelDisplay.Text = "";
         }
+        //------------------------------------------------------------------------------
+        //Metodo Exponente x²
+        //------------------------------------------------------------------------------
+        private void Event_Burron_Exponente(object sender, EventArgs a)
+        {
+            //Almacenar El Primer Número
+            obj_Operaciones.SetNum1(double.Parse(objLabelDisplay.Text));
+            //Almacenar El Operador
+            obj_Operaciones.SetOperador("x²");
+        }
+
+
 
         //------------------------------------------------------------------------------
         //Metodo Resultado =
@@ -469,7 +482,7 @@ namespace Calculator
                 //Imprimir el resultado
                 objLabelDisplay.Text = salida.ToString();
             }
-
+            
             // Usar los métodos get para obtener los valores de num1 y num2
             objLabelSegundoDisplay.Text = "(" + obj_Operaciones.GetNum1().ToString() + "" + obj_Operaciones.GetOperador().ToString() + "" + obj_Operaciones.GetNum2().ToString() + ")=";
         }
