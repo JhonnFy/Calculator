@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace Calculator
@@ -71,6 +72,9 @@ namespace Calculator
                     break;
                 case "x²":
                     resultado = num1 * num1;
+                    break;
+                case "2√x":
+                    resultado = Math.Sqrt(num1);
                     break;
             }
             return resultado;

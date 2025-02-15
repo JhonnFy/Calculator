@@ -235,7 +235,7 @@ namespace Calculator
             Button objButton20 = new Button();
             objButton20.Location = new Point(78,224);
             objButton20.Text = "x²";
-            objButton20.Click += Event_Burron_Exponente;
+            objButton20.Click += Event_Button_Exponente;
             cls_CnsBotones.ConstructorDeBotones(objButton20);
             this.Controls.Add(objButton20);
 
@@ -245,6 +245,7 @@ namespace Calculator
             Button objButton21 = new Button();
             objButton21.Location = new Point(148, 224);
             objButton21.Text = "2√x";
+            objButton21.Click += Event_Button_RaizCuadrada;
             cls_CnsBotones.ConstructorDeBotones(objButton21);
             this.Controls.Add(objButton21);
 
@@ -450,7 +451,7 @@ namespace Calculator
         //------------------------------------------------------------------------------
         //Metodo Exponente x²
         //------------------------------------------------------------------------------
-        private void Event_Burron_Exponente(object sender, EventArgs a)
+        private void Event_Button_Exponente(object sender, EventArgs a)
         {
             //Almacenar El Primer Número
             obj_Operaciones.SetNum1(double.Parse(objLabelDisplay.Text));
@@ -458,6 +459,16 @@ namespace Calculator
             obj_Operaciones.SetOperador("x²");
         }
 
+        //------------------------------------------------------------------------------
+        //Metodo 2√x
+        //------------------------------------------------------------------------------
+        private void Event_Button_RaizCuadrada(object sender, EventArgs e)
+        {
+            //Almacenar El Primer Número
+            obj_Operaciones.SetNum1(double.Parse(objLabelDisplay.Text));
+            //Almacenar El Operador
+            obj_Operaciones.SetOperador("2√x");
+        }
 
 
         //------------------------------------------------------------------------------
