@@ -226,6 +226,7 @@ namespace Calculator
             Button objButton19 = new Button();
             objButton19.Location = new Point(8,224);
             objButton19.Text = "1/x";
+            objButton19.Click += Event_Button_Reciproco;
             cls_CnsBotones.ConstructorDeBotones(objButton19);
             this.Controls.Add(objButton19);
 
@@ -258,6 +259,7 @@ namespace Calculator
             cls_CnsBotones.ConstructorDeBotones(objButton22);
             objButton22.BackColor = Color.WhiteSmoke;
             objButton22.ForeColor = Color.SteelBlue;
+            objButton22.Click += Event_Button_Porcentaje;
             this.Controls.Add(objButton22);
 
             //------------------------------------------------------------------------------
@@ -460,7 +462,7 @@ namespace Calculator
         }
 
         //------------------------------------------------------------------------------
-        //Metodo 2√x
+        //Metodo 2√x  
         //------------------------------------------------------------------------------
         private void Event_Button_RaizCuadrada(object sender, EventArgs e)
         {
@@ -470,6 +472,26 @@ namespace Calculator
             obj_Operaciones.SetOperador("2√x");
         }
 
+        //------------------------------------------------------------------------------
+        //Metodo 1/x
+        //------------------------------------------------------------------------------
+        private void Event_Button_Reciproco(object sender, EventArgs e)
+        {
+            //Almacenar El Primer Número
+            obj_Operaciones.SetNum1(double.Parse(objLabelDisplay.Text));
+            //Almacenar El Operador
+            obj_Operaciones.SetOperador("1/x");
+        }
+        //------------------------------------------------------------------------------
+        //Metodo ‰
+        //------------------------------------------------------------------------------
+        private void Event_Button_Porcentaje(object sender, EventArgs e)
+        {
+            //Almacenar El Primer Número
+            obj_Operaciones.SetNum1(double.Parse(objLabelDisplay.Text));
+            //Almacenar El Operador
+            obj_Operaciones.SetOperador("‰");
+        }
 
         //------------------------------------------------------------------------------
         //Metodo Resultado =

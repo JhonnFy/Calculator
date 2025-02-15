@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using System.Windows.Documents;
 
 namespace Calculator
 {
@@ -75,6 +76,12 @@ namespace Calculator
                     break;
                 case "2√x":
                     resultado = Math.Sqrt(num1);
+                    break;
+                case "1/x":
+                    resultado = 1 / num1;
+                        break;
+                case "‰":
+                    resultado = num1 / 1000;
                     break;
             }
             return resultado;
