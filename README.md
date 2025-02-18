@@ -28,6 +28,16 @@ This project is a calculator developed in .NET with Windows Forms, allowing user
 ![image](https://github.com/user-attachments/assets/776152e9-afba-4856-975f-2591550a9db9)
 ![image](https://github.com/user-attachments/assets/5cfe4daa-3c46-4cfc-9ce0-ef69f8cd27de)
 #
+
+Proyecto
+│
+├── CapaPresentacion  (Interfaz de usuario)
+│
+├── CapaNegocio       (Lógica de negocio)
+│
+└── CapaDatos         (Acceso a datos)
+    └── Helpers       (Aquí va DatabaseHelper)
+
 ![image](https://github.com/user-attachments/assets/817fcde6-fab3-49c3-8dc2-2faa4a4bd27f)
 ![image](https://github.com/user-attachments/assets/221b6f93-e0c4-48ab-801b-accad200d185)
 ![image](https://github.com/user-attachments/assets/ed9ddf0b-ebfa-4d0a-b927-b37696f99a2f)
