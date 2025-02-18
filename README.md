@@ -28,8 +28,8 @@ This project is a calculator developed in .NET with Windows Forms, allowing user
 ![image](https://github.com/user-attachments/assets/776152e9-afba-4856-975f-2591550a9db9)
 ![image](https://github.com/user-attachments/assets/5cfe4daa-3c46-4cfc-9ce0-ef69f8cd27de)
 
-
 ## Contributions  
 Contributions are welcome. If you want to improve any functionality, open an issue or submit a pull request.  
 
-![](https://img.shields.io/github/stars/pandao/editor.md.svg) ![](https://img.shields.io/github/forks/pandao/editor.md.svg) ![](https://img.shields.io/github/tag/pandao/editor.md.svg) ![](https://img.shields.io/github/release/pandao/editor.md.svg) ![](https://img.shields.io/github/issues/pandao/editor.md.svg) ![](https://img.shields.io/bower/v/editor.md.svg)
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
