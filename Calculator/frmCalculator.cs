@@ -18,7 +18,7 @@ namespace Calculator
         private Label objLabelDisplay; //Campo De Clase
         private Label objLabelSegundoDisplay; //Campo De Clase
         private Label objLabelTercerDisplay; //Campo De Clase
-        private cls_CnsOperaciones obj_Operaciones;
+        private cls_CnsOperations obj_Operaciones;
 
         //------------------------------------------------------------------------------
         //Metodo Constructor
@@ -30,7 +30,7 @@ namespace Calculator
             this.StartPosition = FormStartPosition.CenterScreen;
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
             this.Text = "Calculator";
-            obj_Operaciones = new cls_CnsOperaciones();
+            obj_Operaciones = new cls_CnsOperations();
 
             NuevoDisplay();
             SegundoDisplay();
@@ -409,7 +409,7 @@ namespace Calculator
             //Almacenar El Primer Número
             obj_Operaciones.SetNum1(double.Parse(objLabelDisplay.Text));
             //Almacenar El Operador
-            obj_Operaciones.SetOperador("+");
+            obj_Operaciones.SetOperator("+");
             //Limpiar El Display Para Ingresar El Siguiente Valor
             objLabelDisplay.Text = "";
         }
@@ -421,7 +421,7 @@ namespace Calculator
             //Almacenar El Primer Número
             obj_Operaciones.SetNum1(double.Parse(objLabelDisplay.Text));
             //Almacenar El Operador
-            obj_Operaciones.SetOperador("-");
+            obj_Operaciones.SetOperator("-");
             //Limpiar El Display Para Ingresar El Siguiente Valor
             objLabelDisplay.Text = "";
         }
@@ -433,7 +433,7 @@ namespace Calculator
             //Almacenar El Primer Número
             obj_Operaciones.SetNum1(double.Parse(objLabelDisplay.Text));
             //almacenar El Operador
-            obj_Operaciones.SetOperador("*");
+            obj_Operaciones.SetOperator("*");
             //Limpiar El Display Para Ingresar El Siguiente Valor
             objLabelDisplay.Text = "";
         }
@@ -446,7 +446,7 @@ namespace Calculator
             //Almacenar El Primer Número
             obj_Operaciones.SetNum1(double.Parse(objLabelDisplay.Text));
             //Almacenar El Operador
-            obj_Operaciones.SetOperador("/");
+            obj_Operaciones.SetOperator("/");
             //Limpiar El Display Para Ingresar El Siguiente Valor
             objLabelDisplay.Text = "";
         }
@@ -458,7 +458,7 @@ namespace Calculator
             //Almacenar El Primer Número
             obj_Operaciones.SetNum1(double.Parse(objLabelDisplay.Text));
             //Almacenar El Operador
-            obj_Operaciones.SetOperador("x²");
+            obj_Operaciones.SetOperator("x²");
         }
 
         //------------------------------------------------------------------------------
@@ -469,7 +469,7 @@ namespace Calculator
             //Almacenar El Primer Número
             obj_Operaciones.SetNum1(double.Parse(objLabelDisplay.Text));
             //Almacenar El Operador
-            obj_Operaciones.SetOperador("2√x");
+            obj_Operaciones.SetOperator("2√x");
         }
 
         //------------------------------------------------------------------------------
@@ -480,7 +480,7 @@ namespace Calculator
             //Almacenar El Primer Número
             obj_Operaciones.SetNum1(double.Parse(objLabelDisplay.Text));
             //Almacenar El Operador
-            obj_Operaciones.SetOperador("1/x");
+            obj_Operaciones.SetOperator("1/x");
         }
         //------------------------------------------------------------------------------
         //Metodo ‰
@@ -490,7 +490,7 @@ namespace Calculator
             //Almacenar El Primer Número
             obj_Operaciones.SetNum1(double.Parse(objLabelDisplay.Text));
             //Almacenar El Operador
-            obj_Operaciones.SetOperador("‰");
+            obj_Operaciones.SetOperator("‰");
         }
 
         //------------------------------------------------------------------------------
@@ -502,7 +502,7 @@ namespace Calculator
             obj_Operaciones.SetNum2(double.Parse(objLabelDisplay.Text));
 
             //Iterar Sobre Un Valor En Cero
-            if (obj_Operaciones.GetOperador() == "/" && obj_Operaciones.GetNum2() == 0)
+            if (obj_Operaciones.GetOperator() == "/" && obj_Operaciones.GetNum2() == 0)
             {
                 //No Permitido
                 objLabelDisplay.Text = "Not Allowed";
@@ -510,14 +510,14 @@ namespace Calculator
             else
             {
                 //Realizar La Operación
-                double salida = obj_Operaciones.OperacionesMatematicas();
+                double salida = obj_Operaciones.MathematicalOperations();
 
                 //Imprimir el resultado
                 objLabelDisplay.Text = salida.ToString();
             }
             
             // Usar los métodos get para obtener los valores de num1 y num2
-            objLabelSegundoDisplay.Text = "(" + obj_Operaciones.GetNum1().ToString() + "" + obj_Operaciones.GetOperador().ToString() + "" + obj_Operaciones.GetNum2().ToString() + ")=";
+            objLabelSegundoDisplay.Text = "(" + obj_Operaciones.GetNum1().ToString() + "" + obj_Operaciones.GetOperator().ToString() + "" + obj_Operaciones.GetNum2().ToString() + ")=";
         }
     }
 }

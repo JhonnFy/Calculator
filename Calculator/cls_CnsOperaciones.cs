@@ -8,7 +8,7 @@ using System.Windows.Documents;
 
 namespace Calculator
 {
-    public class cls_CnsOperaciones
+    public class cls_CnsOperations
     {
         private double num1;
         private double num2;
@@ -24,7 +24,7 @@ namespace Calculator
             return num2;
         }
 
-        public string GetOperador()
+        public string GetOperator()
         {
             return operador;
         }
@@ -35,7 +35,7 @@ namespace Calculator
             num1 = valor;
         }
 
-        public void SetOperador(string operador)
+        public void SetOperator(string operador)
         {
             this.operador = operador;
         }
@@ -46,45 +46,45 @@ namespace Calculator
             num2 = valor;
         }
 
-        public double OperacionesMatematicas()
+        public double MathematicalOperations()
         {
-            double resultado = 0;
+            double result = 0;
 
             switch (operador)
             {
                 case "+":
-                    resultado = num1 + num2;
+                    result = num1 + num2;
                     break;
                 case "-":
-                    resultado = num1 - num2;
+                    result = num1 - num2;
                     break;
                 case "*":
-                    resultado = num1 * num2;
+                    result = num1 * num2;
                     break;
                 case "/":
                     if (num2 != 0)
                     {
-                        resultado = num1 / num2;
+                        result = num1 / num2;
                     }
                     else
                     {
-                        resultado =0;
+                        result =0;
                     }
                     break;
                 case "x²":
-                    resultado = num1 * num1;
+                    result = num1 * num1;
                     break;
                 case "2√x":
-                    resultado = Math.Sqrt(num1);
+                    result = Math.Sqrt(num1);
                     break;
                 case "1/x":
-                    resultado = 1 / num1;
+                    result = 1 / num1;
                         break;
                 case "‰":
-                    resultado = num1 / 1000;
+                    result = num1 / 1000;
                     break;
             }
-            return resultado;
+            return result;
         }
     }
 
