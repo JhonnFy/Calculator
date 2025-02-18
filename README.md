@@ -17,12 +17,7 @@ This project is a calculator developed in .NET with Windows Forms, allowing user
    git clone https://github.com/JhonnFy/Calculator.git
    ```  
 2. Open the project in **Visual Studio 2022**  
-3. Build and run the application  
-## Contributions  
-Contributions are welcome. If you want to improve any functionality, open an issue or submit a pull request.  
-
-## Author  
-**Jhon Fredy Rincón Pelayo**  
+3. Build and run the application
 
 ## Gallery
 ![image](https://github.com/user-attachments/assets/57d86495-6499-45f6-a9b3-5ad8a90b5755)
@@ -34,3 +29,5 @@ Contributions are welcome. If you want to improve any functionality, open an iss
 ![image](https://github.com/user-attachments/assets/5cfe4daa-3c46-4cfc-9ce0-ef69f8cd27de)
 
 
+## Contributions  
+Contributions are welcome. If you want to improve any functionality, open an issue or submit a pull request.  
