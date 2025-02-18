@@ -69,7 +69,7 @@ namespace Calculator
         public void SegundoDisplay()
         {
             objLabelSegundoDisplay = new Label(); //Inicializar El Campo
-            cls_CnsDisplayDos.ConstructorDeDisplayDos(objLabelSegundoDisplay, this);
+            cls_CnsDisplayDos.ConstructorForDisplayTwo(objLabelSegundoDisplay, this);
             this.Controls.Add(objLabelSegundoDisplay);
         }
 

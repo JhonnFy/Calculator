@@ -12,7 +12,10 @@ namespace Calculator
 {
     public static class cls_CnsDisplayDos
     {
-        public static void ConstructorDeDisplayDos(Label objLavelDisplayDos, Form formulario)
+        //------------------------------------------------------------------------------
+        //Constructor Method
+        //------------------------------------------------------------------------------
+        public static void ConstructorForDisplayTwo(Label objLavelDisplayDos, Form formulario)
         {
             objLavelDisplayDos.TextAlign = ContentAlignment.MiddleRight;
             objLavelDisplayDos.Font = new Font("Segoe UI", 10, FontStyle.Regular);
