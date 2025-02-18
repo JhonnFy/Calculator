@@ -1,23 +1,17 @@
 ![image](https://github.com/user-attachments/assets/77ae2574-3e55-4cf0-b3fd-93af5dcad8d1)
 ![image](https://github.com/user-attachments/assets/fca065f2-f2be-437d-8033-ce80beb2a89a)
-![Calculator](https://github.com/user-attachments/assets/1a78c4f3-15b7-4efd-8bf5-1ab6abd2f7f9)
-![image](https://github.com/user-attachments/assets/e3a6105f-a794-449a-a808-d90aedaca6c2)
-
-Sure! Here’s the README in English:  
-
----
 
 # Calculator in .NET  
 
 ## Description  
 This project is a calculator developed in .NET with Windows Forms, allowing users to perform basic mathematical operations such as addition, subtraction, multiplication, and division, as well as advanced functions like percentage, square root, and exponentiation.  
-
+![image](https://github.com/user-attachments/assets/e3a6105f-a794-449a-a808-d90aedaca6c2)
 ## Features  
 - Intuitive graphical interface based on WinForms  
 - Basic and advanced mathematical operations  
 - Flow control implementation to prevent errors like division by zero  
 - Organized architecture with separate classes for operations and UI  
-
+![Calculator](https://github.com/user-attachments/assets/1a78c4f3-15b7-4efd-8bf5-1ab6abd2f7f9)
 ## Technologies Used  
 - **Language:** C#  
 - **Framework:** .NET  
@@ -37,6 +31,3 @@ Contributions are welcome. If you want to improve any functionality, open an iss
 ## Author  
 **Jhon Fredy Rincón Pelayo**  
 
----
-
-Let me know if you need any modifications!
