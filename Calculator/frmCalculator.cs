@@ -50,7 +50,7 @@ namespace Calculator
         {
             objLabelDisplay = new Label(); //Inicializar El Campo
             objLabelDisplay.Text = "0";
-            cls_CnsDisplay.ConstructorDeDisplay(objLabelDisplay, this);
+            cls_CnsDisplay.ConstructorOfDisplay(objLabelDisplay, this);
             this.Controls.Add(objLabelDisplay);
         }
         //------------------------------------------------------------------------------

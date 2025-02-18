@@ -10,16 +10,21 @@ namespace Calculator
 {
     public static class cls_CnsDisplay
     {
-        public static void ConstructorDeDisplay(Label objLabelDisplay, Form formulario)
+        //------------------------------------------------------------------------------
+        //Constructor Method
+        //------------------------------------------------------------------------------
+        public static void ConstructorOfDisplay(Label objLabelDisplay, Form form)
         {
             objLabelDisplay.TextAlign = ContentAlignment.MiddleRight;
             objLabelDisplay.Font = new Font("Segoe UI", 30, FontStyle.Regular);
-            objLabelDisplay.BackColor = formulario.BackColor;
+            objLabelDisplay.BackColor = form.BackColor;
             objLabelDisplay.ForeColor = Color.Black;
 
-            // Posición y tamaño del display
+            //------------------------------------------------------------------------------
+            // Position and size of the display
+            //------------------------------------------------------------------------------
             objLabelDisplay.Location = new Point(10, 60);
-            objLabelDisplay.Size = new Size(formulario.Width - 20, 70);
+            objLabelDisplay.Size = new Size(form.Width - 20, 70);
         }
     }
 }
