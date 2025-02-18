@@ -29,6 +29,7 @@ This project is a calculator developed in .NET with Windows Forms, allowing user
 ![image](https://github.com/user-attachments/assets/5cfe4daa-3c46-4cfc-9ce0-ef69f8cd27de)
 #
 ![image](https://github.com/user-attachments/assets/817fcde6-fab3-49c3-8dc2-2faa4a4bd27f)
+![image](https://github.com/user-attachments/assets/221b6f93-e0c4-48ab-801b-accad200d185)
 
 
 ## Contributions  
