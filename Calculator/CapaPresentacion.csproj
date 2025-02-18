@@ -39,6 +39,7 @@
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
@@ -57,7 +58,6 @@
     <Compile Include="cls_CnsBotones.cs" />
     <Compile Include="cls_CnsDisplayDos.cs" />
     <Compile Include="cls_CnsLabel.cs" />
-    <Compile Include="cls_CnsOperaciones.cs" />
     <Compile Include="frmCalculator.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +91,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaNegocio\CapaNegocio.csproj">
+      <Project>{e0633d62-759c-4b6b-bf8f-44deaa0d4431}</Project>
+      <Name>CapaNegocio</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

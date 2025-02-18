@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+	<startup> 
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.8" />
+    </startup>
+
+	<!--Parametros De Conexion A dB-->
+	<!--
+	1-Asignar Un Nombre Para La Cadena De Conexión
+		[name ="Conectar_DESKTOP-MANLQG0"]
+	2-Server
+	3-Database
+	4-User ID=
+	5-Password
+	6-providerName
+		connectionString ="Server=DESKTOP-MANLQG0; DataBase=AuditCalculator; User ID=sa; Password=MoesDeveloper0312809833;"
+		providerName="System.Data.SqlClient"
+	-->
+
+	<connectionStrings>
+		<add
+			name ="Conectar_DESKTOP-MANLQG0"
+			connectionString ="Server=DESKTOP-MANLQG0; DataBase=AuditCalculator; User ID=sa; Password=MoesDeveloper0312809833;"
+			providerName="System.Data.SqlClient"
+			/>
+	</connectionStrings>
+</configuration>

@@ -1,0 +1,23 @@
+Paso para conectar el proyecto con la db:
+1-App.Config, crear la cadena de conexion:
+	<connectionStrings>
+		<add
+			name ="Conectar_DESKTOP-MANLQG0"
+			connectionString ="Server=NombreServidor; DataBase=Nombredb; User ID=NombreUsuario; Password=Credencial;"
+			providerName="System.Data.SqlClient"
+			/>
+	</connectionStrings>
+
+2-Crear Una Clase De Conexión DatabaseHelper
+	[De ser posible: En una capa de datos]
+[Pre-Requicito]
+Añadir la referencia a System.Configuration:
+Haz clic derecho en tu proyecto en el "Solution Explorer"
+Selecciona Add > Reference
+En la ventana que aparece, busca System.Configuration (puede estar bajo Assemblies > Framework)
+
+Proyecto
+
+Tengo las siguientes capas:
+CapaEntidad
+CapaNegocio

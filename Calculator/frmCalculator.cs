@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Calculator;
+using CapaNegocio;
 
 namespace Calculator
 {
@@ -18,7 +19,10 @@ namespace Calculator
         private Label objLabelDisplay; //Campo De Clase
         private Label objLabelSegundoDisplay; //Campo De Clase
         private Label objLabelTercerDisplay; //Campo De Clase
-        private cls_CnsOperations obj_Operaciones;
+        private Cls_CnsOperations obj_Operaciones;
+
+
+        //private cls_CnsOperations obj_Operaciones;
 
         //------------------------------------------------------------------------------
         //Metodo Constructor
@@ -30,7 +34,9 @@ namespace Calculator
             this.StartPosition = FormStartPosition.CenterScreen;
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
             this.Text = "Calculator";
-            obj_Operaciones = new cls_CnsOperations();
+            obj_Operaciones = new Cls_CnsOperations();
+             
+
 
             NuevoDisplay();
             SegundoDisplay();
