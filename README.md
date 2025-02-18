@@ -24,3 +24,7 @@ Contributions are welcome. If you want to improve any functionality, open an iss
 ## Author  
 **Jhon Fredy Rincón Pelayo**  
 
+## Gallery
+![image](https://github.com/user-attachments/assets/57d86495-6499-45f6-a9b3-5ad8a90b5755)
+
+
