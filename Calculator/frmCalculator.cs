@@ -59,7 +59,7 @@ namespace Calculator
         private void NuevoLabelStandar()
         {
             objLabelTercerDisplay = new Label(); //Inicializar El Campo
-            cls_CnsDisplayTres.ConstructorDeDisplayTres(objLabelTercerDisplay, this);
+            cls_CnsDisplayTres.ConstructorOfDisplayThree(objLabelTercerDisplay, this);
             this.Controls.Add(objLabelTercerDisplay);
         }
 

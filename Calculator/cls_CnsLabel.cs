@@ -11,14 +11,19 @@ namespace Calculator
 {
     public static class cls_CnsDisplayTres
     {
-        public static void ConstructorDeDisplayTres(Label objLavelDisplayTres, Form formulario)
+        //------------------------------------------------------------------------------
+        //Constructor Method
+        //------------------------------------------------------------------------------
+        public static void ConstructorOfDisplayThree(Label objLavelDisplayTres, Form formulario)
         {
             objLavelDisplayTres.Text = "Standard";
             objLavelDisplayTres.Font = new Font("Segoe UI", 10, FontStyle.Regular);
             objLavelDisplayTres.BackColor = formulario.BackColor;
             objLavelDisplayTres.ForeColor = Color.Black;
 
-            //Posición y tamaño del display3
+            //------------------------------------------------------------------------------
+            // Position and size of display3
+            //------------------------------------------------------------------------------
             objLavelDisplayTres.Location = new Point(2, 2);
             objLavelDisplayTres.Size = new Size(formulario.Width -20, 20);
         }
