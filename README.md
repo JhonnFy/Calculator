@@ -18,6 +18,9 @@ The project is organized into multiple layers following the layered architecture
 - Entity Layer (CapaEntidad) [**Type:** Class Library (.NET Framework)]
 - Business Layer (CapaNegocio) [**Type:** Class Library (.NET Framework)]
 - Data Layer (CapaDatos) [**Type:** Class Library (.NET Framework)]
+## Estructura
+  ![image](https://github.com/user-attachments/assets/55436d66-c5ca-4b38-a412-f69aee2fe1f3)
+  
 ```sh
    CapaDatos → Acceso a la base de datos (Aquí van las consultas SQL)
    CapaNegocio → Procesa la lógica de negocio (Llama a la CapaDatos)
@@ -41,14 +44,9 @@ The project is organized into multiple layers following the layered architecture
 ![image](https://github.com/user-attachments/assets/02001d72-ffca-4b69-a649-f4e6194f12f5)
 ![image](https://github.com/user-attachments/assets/776152e9-afba-4856-975f-2591550a9db9)
 ![image](https://github.com/user-attachments/assets/5cfe4daa-3c46-4cfc-9ce0-ef69f8cd27de)
-#
-Estructura
-![image](https://github.com/user-attachments/assets/55436d66-c5ca-4b38-a412-f69aee2fe1f3)
 
 
-![image](https://github.com/user-attachments/assets/817fcde6-fab3-49c3-8dc2-2faa4a4bd27f)
-![image](https://github.com/user-attachments/assets/221b6f93-e0c4-48ab-801b-accad200d185)
-![image](https://github.com/user-attachments/assets/ed9ddf0b-ebfa-4d0a-b927-b37696f99a2f)
+
 
 
 
