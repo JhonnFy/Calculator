@@ -23,16 +23,12 @@ This project is a calculator developed in .NET with Windows Forms, allowing user
 
 The project is organized into multiple layers following the layered architecture pattern:
 
-### CapaPresentación  
-**Type:** Windows Forms Application, WPF  
+1. **Type:** Windows Forms Application, WPF  
 Contains the graphical user interface and user interaction.  
 
-### CapaEntidad  
-**Type:** Class Library (.NET Framework)  
+2. **Type:** Class Library (.NET Framework)  
 Defines entity classes that represent system data.  
-
-### CapaNegocio  
-**Type:** Class Library (.NET Framework)  
+3. **Type:** Class Library (.NET Framework)  
 Implements business logic and acts as an intermediary between CapaDatos and CapaPresentación.  
 
 ### CapaDatos  
