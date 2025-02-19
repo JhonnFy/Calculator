@@ -541,6 +541,10 @@ namespace Calculator
                         salida
                         );
                     MessageBox.Show("Operación almacenada en la base de datos.");
+
+                    //Limpiar El Display Para Ingresar El Siguiente Valor
+                    objLabelDisplay.Text = "";
+                    objLabelSegundoDisplay.Text = "";
                 }
                 catch (Exception ex)
                 {
