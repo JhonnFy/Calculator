@@ -18,7 +18,7 @@ The project is organized into multiple layers following the layered architecture
 - Entity Layer (CapaEntidad) [**Type:** Class Library (.NET Framework)]
 - Business Layer (CapaNegocio) [**Type:** Class Library (.NET Framework)]
 - Data Layer (CapaDatos) [**Type:** Class Library (.NET Framework)]
-## Estructura
+## Structure
   ![image](https://github.com/user-attachments/assets/55436d66-c5ca-4b38-a412-f69aee2fe1f3)
   
 ```sh
