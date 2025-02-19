@@ -19,6 +19,11 @@ The project is organized into multiple layers following the layered architecture
 - Business Layer (CapaNegocio) [**Type:** Class Library (.NET Framework)]
 - Data Layer (CapaDatos) [**Type:** Class Library (.NET Framework)]
 
+📌 **CapaDatos** → Acceso a la base de datos (Aquí van las consultas SQL)
+📌 **CapaNegocio** → Procesa la lógica de negocio (Llama a la CapaDatos)
+📌 **CapaEntidad** → Clases que representan los datos (Modelos de las tablas)
+📌 **CapaPresentación** → Interfaz de usuario (Llama a la CapaNegocio)
+
 ## Installation and Usage  
 1. Clone the repository:  
    ```sh
