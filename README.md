@@ -10,7 +10,24 @@ This project is a calculator developed in .NET with Windows Forms, allowing user
 ## Technologies Used  
 - **Language:** C#  
 - **Framework:** .NET  
-- **GUI:** Windows Forms  
+- **GUI:** Windows Forms
+
+## Project Structure
+The project is organized into multiple layers following the layered architecture pattern:
+- Presentation Layer (CapaPresentación) [**Type:** Windows Forms Application, WPF]
+- Entity Layer (CapaEntidad) [**Type:** Class Library (.NET Framework)]
+- Business Layer (CapaNegocio) [**Type:** Class Library (.NET Framework)]
+- Data Layer (CapaDatos) [**Type:** Class Library (.NET Framework)]
+## Estructura
+  ![image](https://github.com/user-attachments/assets/55436d66-c5ca-4b38-a412-f69aee2fe1f3)
+  
+```sh
+   CapaDatos → Acceso a la base de datos (Aquí van las consultas SQL)
+   CapaNegocio → Procesa la lógica de negocio (Llama a la CapaDatos)
+   CapaEntidad → Clases que representan los datos (Modelos de las tablas)
+   CapaPresentación → Interfaz de usuario (Llama a la CapaNegocio)
+```
+
 ## Installation and Usage  
 1. Clone the repository:  
    ```sh
@@ -27,6 +44,11 @@ This project is a calculator developed in .NET with Windows Forms, allowing user
 ![image](https://github.com/user-attachments/assets/02001d72-ffca-4b69-a649-f4e6194f12f5)
 ![image](https://github.com/user-attachments/assets/776152e9-afba-4856-975f-2591550a9db9)
 ![image](https://github.com/user-attachments/assets/5cfe4daa-3c46-4cfc-9ce0-ef69f8cd27de)
+
+
+
+
+
 
 ## Contributions  
 Contributions are welcome. If you want to improve any functionality, open an issue or submit a pull request.  

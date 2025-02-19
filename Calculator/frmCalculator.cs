@@ -10,6 +10,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Calculator;
 using CapaNegocio;
+using CapaDatos;
+
 
 namespace Calculator
 {
@@ -89,7 +91,7 @@ namespace Calculator
             //------------------------------------------------------------------------------
             Button objButton1 = new Button();
             objButton1.Location = new Point(8, 440); //Filas Columnas
-            objButton1.Text = "±";
+            objButton1.Text = "▼";
             cls_CnsBotones.ButtonConstructor(objButton1);
             this.Controls.Add(objButton1);
 
@@ -520,10 +522,32 @@ namespace Calculator
 
                 //Imprimir el resultado
                 objLabelDisplay.Text = salida.ToString();
+
+                // Usar los métodos get para obtener los valores de num1 y num2
+                objLabelSegundoDisplay.Text = "(" + obj_Operaciones.GetNum1().ToString() + "" + obj_Operaciones.GetOperator().ToString() + "" + obj_Operaciones.GetNum2().ToString() + ")=";
+
+
+                // Aquí insertamos los valores en la base de datos
+                try
+                {
+                    // Crear una instancia de DatabaseHelper
+                    DatabaseHelper objDbHelper = new DatabaseHelper();
+
+                    // Llamar al método de inserción de datos en la base de datos
+                    objDbHelper.ConnectToDatabase(
+                        Convert.ToInt32(obj_Operaciones.GetNum1()),
+                        Convert.ToInt32(obj_Operaciones.GetNum2()),
+                        obj_Operaciones.GetOperator().ToString(),
+                        salida
+                        );
+                    MessageBox.Show("Operación almacenada en la base de datos.");
+                }
+                catch (Exception ex)
+                {
+                    // Manejo de errores en caso de que la inserción falle
+                    MessageBox.Show("Error al insertar en la base de datos: " + ex.Message);
+                }
             }
-            
-            // Usar los métodos get para obtener los valores de num1 y num2
-            objLabelSegundoDisplay.Text = "(" + obj_Operaciones.GetNum1().ToString() + "" + obj_Operaciones.GetOperator().ToString() + "" + obj_Operaciones.GetNum2().ToString() + ")=";
-        }
+        }//
     }
 }
