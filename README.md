@@ -19,6 +19,27 @@ This project is a calculator developed in .NET with Windows Forms, allowing user
 2. Open the project in **Visual Studio 2022**  
 3. Build and run the application
 
+## Project Structure
+
+The project is organized into multiple layers following the layered architecture pattern:
+
+### CapaPresentación  
+**Type:** Windows Forms Application, WPF  
+Contains the graphical user interface and user interaction.  
+
+### CapaEntidad  
+**Type:** Class Library (.NET Framework)  
+Defines entity classes that represent system data.  
+
+### CapaNegocio  
+**Type:** Class Library (.NET Framework)  
+Implements business logic and acts as an intermediary between CapaDatos and CapaPresentación.  
+
+### CapaDatos  
+**Type:** Class Library (.NET Framework)  
+Handles database communication, including executing queries and transactions.
+
+
 ## Gallery
 ![image](https://github.com/user-attachments/assets/57d86495-6499-45f6-a9b3-5ad8a90b5755)
 ![image](https://github.com/user-attachments/assets/b9fe2199-5d5e-403a-acce-48dc20c25d69)
