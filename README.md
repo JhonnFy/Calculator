@@ -1,7 +1,8 @@
 # Calculator In .NET  
 
 ## Description  
-This project is a calculator developed in .NET with Windows Forms, allowing users to perform basic mathematical operations such as addition, subtraction, multiplication, and division, as well as advanced functions like percentage, square root, and exponentiation.  
+This project is a calculator developed in .NET with Windows Forms, designed to perform basic mathematical operations such as addition, subtraction, multiplication, and division, along with advanced functions like percentage, square root, and exponentiation. The application follows a layered architecture, integrating a database connection to log and audit each operation performed.
+
 ## Features  
 - Intuitive graphical interface based on WinForms  
 - Basic and advanced mathematical operations  
