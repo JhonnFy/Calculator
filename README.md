@@ -35,10 +35,15 @@ The project is organized into multiple layers following the layered architecture
    git clone https://github.com/JhonnFy/Calculator.git
    ```  
 2. Open the project in **Visual Studio 2022**  
+
 3. Set up the database
 The application includes a database connection to log and audit calculations.
 Import the provided SQL script (database_setup.sql) to create the necessary tables.
 Update the connection string in DatabaseHelper.cs to match your SQL Server configuration.
+
+4. Run the application
+Build and execute the project from Visual Studio.
+Perform calculations and verify that operations are logged in the database.
 
 ## Gallery
 ![image](https://github.com/user-attachments/assets/57d86495-6499-45f6-a9b3-5ad8a90b5755)
