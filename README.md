@@ -3,6 +3,27 @@
 ## Description  
 This project is a calculator developed in .NET with Windows Forms, designed to perform basic mathematical operations such as addition, subtraction, multiplication, and division, along with advanced functions like percentage, square root, and exponentiation. The application follows a layered architecture, integrating a database connection to log and audit each operation performed.
 
+## Project Structure
+
+- **📂 Calculator**
+  - **📂 CapaPresentacion** (UI - Interfaz de Usuario)
+    - `Form1.cs`
+    - `RoundedTextBox.cs`
+    - `Program.cs`
+    - `LoginV2.cs`
+  - **📂 CapaNegocio** (Lógica de Negocio)
+    - `Calculadora.cs` (Maneja las operaciones matemáticas)
+    - `AuditoriaManager.cs` (Gestiona la auditoría de transacciones)
+    - `RoleEntity.cs`
+  - **📂 CapaDatos** (Acceso a Datos)
+    - `DatabaseHelper.cs` (Manejo de conexión con la base de datos)
+    - `AuditoriaRepository.cs` (Registra las operaciones en la BD)
+    - `ConfiguracionDB.cs` (Gestión de conexión y configuraciones)
+  - **📂 Database** (Base de Datos)
+    - `database_setup.sql` (Script para crear tablas)
+    - `connection_config.json` (Opcional: Configuración de conexión)
+  - `README.md`
+
 ## Features  
 - Intuitive graphical interface based on WinForms  
 - Basic and advanced mathematical operations  
@@ -45,33 +66,6 @@ Update the connection string in DatabaseHelper.cs to match your SQL Server confi
 Build and execute the project from Visual Studio.
 Perform calculations and verify that operations are logged in the database.
 
-
-## Project Structure
-## Project Structure
-
-- **📂 Calculator**
-  - **📂 CapaPresentacion** (UI - Interfaz de Usuario)
-    - `Form1.cs`
-    - `RoundedTextBox.cs`
-    - `Program.cs`
-    - `LoginV2.cs`
-  - **📂 CapaNegocio** (Lógica de Negocio)
-    - `Calculadora.cs` (Maneja las operaciones matemáticas)
-    - `AuditoriaManager.cs` (Gestiona la auditoría de transacciones)
-    - `RoleEntity.cs`
-  - **📂 CapaDatos** (Acceso a Datos)
-    - `DatabaseHelper.cs` (Manejo de conexión con la base de datos)
-    - `AuditoriaRepository.cs` (Registra las operaciones en la BD)
-    - `ConfiguracionDB.cs` (Gestión de conexión y configuraciones)
-  - **📂 Database** (Base de Datos)
-    - `database_setup.sql` (Script para crear tablas)
-    - `connection_config.json` (Opcional: Configuración de conexión)
-  - `README.md`
-
-
-
-
-
 ## Gallery
 ![image](https://github.com/user-attachments/assets/57d86495-6499-45f6-a9b3-5ad8a90b5755)
 ![image](https://github.com/user-attachments/assets/b9fe2199-5d5e-403a-acce-48dc20c25d69)
@@ -80,11 +74,6 @@ Perform calculations and verify that operations are logged in the database.
 ![image](https://github.com/user-attachments/assets/02001d72-ffca-4b69-a649-f4e6194f12f5)
 ![image](https://github.com/user-attachments/assets/776152e9-afba-4856-975f-2591550a9db9)
 ![image](https://github.com/user-attachments/assets/5cfe4daa-3c46-4cfc-9ce0-ef69f8cd27de)
-
-
-
-
-
 
 ## Contributions  
 Contributions are welcome. If you want to improve any functionality, open an issue or submit a pull request.  
