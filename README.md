@@ -45,6 +45,35 @@ Update the connection string in DatabaseHelper.cs to match your SQL Server confi
 Build and execute the project from Visual Studio.
 Perform calculations and verify that operations are logged in the database.
 
+
+## Project Structure
+📂 Calculator
+│
+├── 📂 CapaPresentacion  (UI - Interfaz de Usuario)
+│   ├── Form1.cs
+│   ├── RoundedTextBox.cs
+│   ├── Program.cs
+│   └── LoginV2.cs
+│
+├── 📂 CapaNegocio  (Lógica de Negocio)
+│   ├── Calculadora.cs  (Maneja las operaciones matemáticas)
+│   ├── AuditoriaManager.cs  (Gestiona la auditoría de transacciones)
+│   └── RoleEntity.cs
+│
+├── 📂 CapaDatos  (Acceso a Datos)
+│   ├── DatabaseHelper.cs  (Manejo de conexión con la base de datos)
+│   ├── AuditoriaRepository.cs  (Registra las operaciones en la BD)
+│   └── ConfiguracionDB.cs  (Gestión de conexión y configuraciones)
+│
+├── 📂 Database  (Base de Datos)
+│   ├── 📄 database_setup.sql  (Script para crear tablas)
+│   └── 📄 connection_config.json  (Opcional: Configuración de conexión)
+│
+└── 📄 README.md
+
+
+
+
 ## Gallery
 ![image](https://github.com/user-attachments/assets/57d86495-6499-45f6-a9b3-5ad8a90b5755)
 ![image](https://github.com/user-attachments/assets/b9fe2199-5d5e-403a-acce-48dc20c25d69)
